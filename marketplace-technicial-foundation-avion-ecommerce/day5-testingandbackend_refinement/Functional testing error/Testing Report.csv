@@ -1,0 +1,11 @@
+﻿Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Tested By,Assigned To,Remarks
+TC0001,Validation Category Menu in Navbar,Open website > Display Category from Sanity CMS,Parking page should show with out showing error when sanity cms not connected.,Nav Bar Working correctly ,Passed,High,Ather,Shoaib,Handled gracefully
+TC0002,Validate product listing page,Open Product Page > Verify Product,Products displayed correctly,Products displayed correctly,Passed,Medium,Ather,Shoaib,Handled gracefully
+TC0003,Validate Product Detail Page,Open Product Detail Page >  Verify Product Detail Page,Product Detail Page Displayed correctly,Product detail Displayed Correctly,Passed,Medium,Ather,Shoaib,Handled gracefully
+TC0004,Check Cart Functionality,Add Product to cart > Verify Cart Contents,Cart updates with added product,Text Aligenment needed and + - Funcation needed,,High,Ather,Shoaib,Work but need Some text algnment and need to add Funcation of + or - Qty
+TC0004,Check Cart Functionality,Add Product to cart > Verify Cart Contents,Cart updates with added product,Cart updates with added product,Passed,High,Ather,Shoaib,Work as expected
+TC0005,Check Cart Functionality,Remove from Cart > validation and operational functions,Remove any items from cart,cart remove functionality as expected,Passed,High,Ather,Shoaib,Work as expected
+TC0006,Search any product and category,Search Product or categories,Product searching functionality is working,Product searching functionality is working,Passed,Medium,Ather,Shoaib,Work as expected
+TC0007,Ensure responsiveness on mobile,resize browser window > check layout,layout adjust properly to screen size,Nav bar is showing 2 X buttons ,,Medium,Ather,Shoaib,Nav bar is showing 2 X buttons 
+TC0007,Ensure responsiveness on mobile,resize browser window > check layout,layout adjust properly to screen size,layout adjust properly to screen size,Passed,Medium,Ather,Shoaib,Work as expected
+TC0008,Test Api error handling,Disconnect API > Refresh Page,Show fallback ui with error message,Error message shown,Passed,Medium,Shoaib,Shoaib,Handled gracefully
