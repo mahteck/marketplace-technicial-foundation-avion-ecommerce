@@ -76,6 +76,61 @@ features, and dimensions.
 ] 
 
 ```
+### 2. Login API
+### My Endpoint: /api/login
+(from this endpoint i'll call /api/login)
+### Endpoint: /api/login/
+**Method**:  POST
+**Header**: headers: {'Content-Type': 'application/json'}
+**Payload:** 
+
+```json
+{
+    "email": "shoaib1244@gmail.com",
+    "password": "Bizztrax@123"
+}
+
+**Response**
+{
+    "email": "shoaib1244@gmail.com",
+    "password": "Bizztrax@123"
+}
+
+```
+
+### 2. Signup API
+### My Endpoint: /api/signup
+(from this endpoint i'll call /api/signup)
+### Endpoint: /api/signup/
+**Method**:  POST
+**Header**: headers: {'Content-Type': 'application/json'}
+**Payload:** 
+
+```json
+
+{
+    "name": "shoaib",
+    "email": "shoaib1244@gmail.com",
+    "password": "SecurePassword123"
+}
+
+
+**Response**
+{
+    "message": "User created successfully",
+    "user": {
+        "_createdAt": "2025-01-22T10:07:46Z",
+        "_id": "7SHn44fr5ON5cm5sgvVKhE",
+        "_rev": "7SHn44fr5ON5cm5sgvVKf7",
+        "_type": "user",
+        "_updatedAt": "2025-01-22T10:07:46Z",
+        "email": "shoaib1244@gmail.com",
+        "name": "shoaib",
+        "password": "$2a$10$3k2oTkeoAKOP/AgxYIbZSuMUEe8WA3Gegzsv7BnVYbM9M5E7zIO8K"
+    }
+}
+
+```
 
 ### 2. Shipment API
 ### My Endpoint: /api/shipmentOrder
@@ -88,7 +143,8 @@ This response will return shipment charges.
 - **Request**
 Query Parameters: weight and distance. 
 
-```json 
+```json
+
 {
   {
       "weight": 10,
@@ -109,7 +165,7 @@ This endpoint post data from page to sanity.
 - **Response**
 The response will include the trackingNumber and additional shipment information, such as the carrier and estimated arrival time (ETA), product info, payment method, customer info.
 
-```` json
+```json
 {
   {
   "customername": "abc",
@@ -126,9 +182,8 @@ The response will include the trackingNumber and additional shipment information
   }
 }	
 
+```
 
-
-````
 ### My Endpoint: /api/liveTracking
 (from this endpoint i'll call /api/tracks/{carrier}/{trackingNumber} api)
 ### Shippo Endpoint: /api/tracks/{carrier}/{trackingNumber}
@@ -143,7 +198,7 @@ This endpoint fetches live tracking details for a shipment using the tracking nu
 **Response**
 The response will contain the live tracking information, including the ETA, tracking history, status, and location.
 
-````json
+```json
 {
   "trackingNumber": "1234567890",
   "carrier": "shippo",
@@ -171,7 +226,7 @@ The response will contain the live tracking information, including the ETA, trac
   }
 }
 
-````
+```
 
 ### Summary of APIs
 **/api/products:** Fetches product details.
